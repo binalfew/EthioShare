@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: EthioShare
+        psr4_prefix: EthioShare
+        src_path: app
