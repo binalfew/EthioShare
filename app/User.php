@@ -2,6 +2,7 @@
 
 namespace EthioShare;
 
+use EthioShare\Exam;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -36,4 +37,19 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public function exams()
+    {
+        return $this->hasMany(Exam::class);
+    }
+
+    public function owns($relation)
+    {
+        return $relation->user_id == $this->id;
+    }
+
+    public function publish(Exam $exam)
+    {
+        return $this->exams()->save($exam);
+    }
 }
