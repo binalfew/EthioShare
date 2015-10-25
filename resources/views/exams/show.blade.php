@@ -5,7 +5,7 @@
 		<div class="col-lg-6">
 			<div class="panel panel-success">
 	            <div class="panel-heading">
-	                Exam Info
+	                Exam Details
 	            </div>
 	            <div class="panel-body">
 	                <dl class="dl-horizontal">
