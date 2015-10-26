@@ -10,7 +10,7 @@
                     </div>
                     <div class="col-xs-8 text-right">
                         <span> Exams </span>
-                        <h2 class="font-bold">7000+</h2>
+                        <h2 class="font-bold">8000+</h2>
                     </div>
                 </div>
             </div>
